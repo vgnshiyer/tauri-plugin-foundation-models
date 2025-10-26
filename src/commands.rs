@@ -1,13 +1,12 @@
-use tauri::{AppHandle, command, Runtime};
+use tauri::{command, AppHandle, Runtime};
 
 use crate::models::*;
-use crate::Result;
 use crate::FoundationModelsExt;
+use crate::Result;
 
 #[command]
-pub(crate) async fn ping<R: Runtime>(
+pub(crate) async fn check_availability<R: Runtime>(
     app: AppHandle<R>,
-    payload: PingRequest,
-) -> Result<PingResponse> {
-    app.foundation_models().ping(payload)
+) -> Result<AvailabilityResponse> {
+    app.foundation_models().check_availability()
 }

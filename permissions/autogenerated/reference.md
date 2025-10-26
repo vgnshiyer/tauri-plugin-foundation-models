@@ -1,10 +1,10 @@
 ## Default Permission
 
-Default permissions for the plugin
+Default permissions for the foundation-models plugin
 
 #### This default permission set includes the following:
 
-- `allow-ping`
+- `allow-check-availability`
 
 ## Permission Table
 
@@ -18,12 +18,12 @@ Default permissions for the plugin
 <tr>
 <td>
 
-`foundation-models:allow-ping`
+`foundation-models:allow-check-availability`
 
 </td>
 <td>
 
-Enables the ping command without any pre-configured scope.
+Enables the check_availability command without any pre-configured scope.
 
 </td>
 </tr>
@@ -31,12 +31,12 @@ Enables the ping command without any pre-configured scope.
 <tr>
 <td>
 
-`foundation-models:deny-ping`
+`foundation-models:deny-check-availability`
 
 </td>
 <td>
 
-Denies the ping command without any pre-configured scope.
+Denies the check_availability command without any pre-configured scope.
 
 </td>
 </tr>
