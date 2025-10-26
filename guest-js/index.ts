@@ -6,7 +6,7 @@ export type AvailabilityStatus =
   | 'appleIntelligenceNotEnabled'
   | 'modelNotReady'
   | 'unknown'
-  | 'unavailable';
+  | 'notSupported';
 
 export interface AvailabilityResponse {
   status: AvailabilityStatus;

@@ -14,7 +14,7 @@ pub struct FoundationModels<R: Runtime>(AppHandle<R>);
 impl<R: Runtime> FoundationModels<R> {
     pub fn check_availability(&self) -> crate::Result<AvailabilityResponse> {
         Ok(AvailabilityResponse {
-            status: "unavailable".to_string(),
+            status: "notSupported".to_string(),
         })
     }
 }
